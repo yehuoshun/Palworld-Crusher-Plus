@@ -3,7 +3,7 @@
     "yehuoshun_Crusher_StoneToOre": {
       "Product_Id": "CopperOre",
       "Product_Count": 1,
-      "WorkAmount": 1000,
+      "WorkAmount": 1000.0,
       "WorkableAttribute": 1,
       "UnlockItemID": "None",
       "Material1_Id": "Stone",
@@ -24,7 +24,7 @@
     "yehuoshun_Crusher_StoneToCoal": {
       "Product_Id": "Coal",
       "Product_Count": 1,
-      "WorkAmount": 1500,
+      "WorkAmount": 1500.0,
       "WorkableAttribute": 1,
       "UnlockItemID": "None",
       "Material1_Id": "Stone",
@@ -45,7 +45,7 @@
     "yehuoshun_Crusher_WoodToCharcoal": {
       "Product_Id": "Charcoal",
       "Product_Count": 1,
-      "WorkAmount": 500,
+      "WorkAmount": 500.0,
       "WorkableAttribute": 1,
       "UnlockItemID": "None",
       "Material1_Id": "Wood",
@@ -66,7 +66,7 @@
     "yehuoshun_Crusher_WoodToFiber": {
       "Product_Id": "Fiber",
       "Product_Count": 1,
-      "WorkAmount": 300,
+      "WorkAmount": 300.0,
       "WorkableAttribute": 1,
       "UnlockItemID": "None",
       "Material1_Id": "Wood",
@@ -87,7 +87,7 @@
     "yehuoshun_Crusher_FiberToCloth": {
       "Product_Id": "Cloth",
       "Product_Count": 1,
-      "WorkAmount": 500,
+      "WorkAmount": 500.0,
       "WorkableAttribute": 1,
       "UnlockItemID": "None",
       "Material1_Id": "Fiber",
@@ -108,7 +108,7 @@
     "yehuoshun_Crusher_FiberToHighQualityCloth": {
       "Product_Id": "Cloth2",
       "Product_Count": 1,
-      "WorkAmount": 1500,
+      "WorkAmount": 1500.0,
       "WorkableAttribute": 1,
       "UnlockItemID": "None",
       "Material1_Id": "Fiber",
