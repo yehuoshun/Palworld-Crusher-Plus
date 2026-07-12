@@ -26,7 +26,7 @@
 | 木头 | 木炭 | 5:1 |
 | 木头 | 纤维 | 3:1 |
 
-## 注意事项
+## 技术细节
 
-- 数据表名 `DT_ItemConvertDataTable` 为推测值，如不生效需用 FModel 确认实际表名。
-- 字段名可能需要根据实际表结构微调。
+- 数据表：`DT_ItemRecipeDataTable_Common`（参考 True Recipes 确认）
+- 字段参考 PalSchema 官方 schema 定义
