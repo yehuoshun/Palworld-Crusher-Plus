@@ -566,6 +566,27 @@
       "EnergyAmount": 0,
       "CraftExpRate": 100.0,
       "Editor_RowNameHash": 0
+    },
+    "yehuoshun_Crusher_AncientPartsAndWoodToAncientBark": {
+      "Product_Id": "Wood_Ancient",
+      "Product_Count": 1,
+      "WorkAmount": 5000.0,
+      "WorkableAttribute": 1,
+      "UnlockItemID": "None",
+      "Material1_Id": "PalCrystal_Ex",
+      "Material1_Count": 1,
+      "Material2_Id": "Wood",
+      "Material2_Count": 10,
+      "Material3_Id": "None",
+      "Material3_Count": 0,
+      "Material4_Id": "None",
+      "Material4_Count": 0,
+      "Material5_Id": "None",
+      "Material5_Count": 0,
+      "EnergyType": "None",
+      "EnergyAmount": 0,
+      "CraftExpRate": 5.0,
+      "Editor_RowNameHash": 0
     }
   }
 }
