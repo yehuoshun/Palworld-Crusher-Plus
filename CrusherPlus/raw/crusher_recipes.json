@@ -3,7 +3,7 @@
     "yehuoshun_Crusher_StoneToOre": {
       "Product_Id": "CopperOre",
       "Product_Count": 1,
-      "WorkAmount": 100.0,
+      "WorkAmount": 1000,
       "WorkableAttribute": 1,
       "UnlockItemID": "None",
       "Material1_Id": "Stone",
@@ -18,13 +18,13 @@
       "Material5_Count": 0,
       "EnergyType": "None",
       "EnergyAmount": 0,
-      "CraftExpRate": 0.1,
+      "CraftExpRate": 1,
       "Editor_RowNameHash": 0
     },
     "yehuoshun_Crusher_StoneToCoal": {
       "Product_Id": "Coal",
       "Product_Count": 1,
-      "WorkAmount": 150.0,
+      "WorkAmount": 1500,
       "WorkableAttribute": 1,
       "UnlockItemID": "None",
       "Material1_Id": "Stone",
@@ -39,13 +39,13 @@
       "Material5_Count": 0,
       "EnergyType": "None",
       "EnergyAmount": 0,
-      "CraftExpRate": 0.15,
+      "CraftExpRate": 1,
       "Editor_RowNameHash": 0
     },
     "yehuoshun_Crusher_WoodToCharcoal": {
       "Product_Id": "Charcoal",
       "Product_Count": 1,
-      "WorkAmount": 50.0,
+      "WorkAmount": 500,
       "WorkableAttribute": 1,
       "UnlockItemID": "None",
       "Material1_Id": "Wood",
@@ -60,13 +60,13 @@
       "Material5_Count": 0,
       "EnergyType": "None",
       "EnergyAmount": 0,
-      "CraftExpRate": 0.05,
+      "CraftExpRate": 1,
       "Editor_RowNameHash": 0
     },
     "yehuoshun_Crusher_WoodToFiber": {
       "Product_Id": "Fiber",
       "Product_Count": 1,
-      "WorkAmount": 30.0,
+      "WorkAmount": 300,
       "WorkableAttribute": 1,
       "UnlockItemID": "None",
       "Material1_Id": "Wood",
@@ -81,13 +81,13 @@
       "Material5_Count": 0,
       "EnergyType": "None",
       "EnergyAmount": 0,
-      "CraftExpRate": 0.03,
+      "CraftExpRate": 1,
       "Editor_RowNameHash": 0
     },
     "yehuoshun_Crusher_FiberToCloth": {
       "Product_Id": "Cloth",
       "Product_Count": 1,
-      "WorkAmount": 50.0,
+      "WorkAmount": 500,
       "WorkableAttribute": 1,
       "UnlockItemID": "None",
       "Material1_Id": "Fiber",
@@ -102,13 +102,13 @@
       "Material5_Count": 0,
       "EnergyType": "None",
       "EnergyAmount": 0,
-      "CraftExpRate": 0.05,
+      "CraftExpRate": 1,
       "Editor_RowNameHash": 0
     },
     "yehuoshun_Crusher_FiberToHighQualityCloth": {
       "Product_Id": "Cloth2",
       "Product_Count": 1,
-      "WorkAmount": 150.0,
+      "WorkAmount": 1500,
       "WorkableAttribute": 1,
       "UnlockItemID": "None",
       "Material1_Id": "Fiber",
@@ -123,7 +123,7 @@
       "Material5_Count": 0,
       "EnergyType": "None",
       "EnergyAmount": 0,
-      "CraftExpRate": 0.15,
+      "CraftExpRate": 1,
       "Editor_RowNameHash": 0
     }
   }
