@@ -27,6 +27,13 @@
       "WorkableAttribute": 1,
       "Material1_Id": "Wood",
       "Material1_Count": 3
+    },
+    "Crusher_FiberToCloth": {
+      "Product_Count": 1,
+      "WorkAmount": 50.0,
+      "WorkableAttribute": 1,
+      "Material1_Id": "Fiber",
+      "Material1_Count": 3
     }
   }
 }
