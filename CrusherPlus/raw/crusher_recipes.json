@@ -18,7 +18,7 @@
       "Material5_Count": 0,
       "EnergyType": "None",
       "EnergyAmount": 0,
-      "CraftExpRate": 1.0,
+      "CraftExpRate": 0.1,
       "Editor_RowNameHash": 0
     },
     "yehuoshun_Crusher_StoneToCoal": {
@@ -39,7 +39,7 @@
       "Material5_Count": 0,
       "EnergyType": "None",
       "EnergyAmount": 0,
-      "CraftExpRate": 1.0,
+      "CraftExpRate": 0.15,
       "Editor_RowNameHash": 0
     },
     "yehuoshun_Crusher_WoodToCharcoal": {
@@ -60,7 +60,7 @@
       "Material5_Count": 0,
       "EnergyType": "None",
       "EnergyAmount": 0,
-      "CraftExpRate": 1.0,
+      "CraftExpRate": 0.05,
       "Editor_RowNameHash": 0
     },
     "yehuoshun_Crusher_WoodToFiber": {
@@ -81,7 +81,7 @@
       "Material5_Count": 0,
       "EnergyType": "None",
       "EnergyAmount": 0,
-      "CraftExpRate": 1.0,
+      "CraftExpRate": 0.03,
       "Editor_RowNameHash": 0
     },
     "yehuoshun_Crusher_FiberToCloth": {
@@ -102,7 +102,7 @@
       "Material5_Count": 0,
       "EnergyType": "None",
       "EnergyAmount": 0,
-      "CraftExpRate": 1.0,
+      "CraftExpRate": 0.05,
       "Editor_RowNameHash": 0
     },
     "yehuoshun_Crusher_FiberToHighQualityCloth": {
@@ -123,7 +123,7 @@
       "Material5_Count": 0,
       "EnergyType": "None",
       "EnergyAmount": 0,
-      "CraftExpRate": 1.0,
+      "CraftExpRate": 0.15,
       "Editor_RowNameHash": 0
     }
   }
