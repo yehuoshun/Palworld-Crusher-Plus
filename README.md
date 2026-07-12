@@ -28,5 +28,5 @@
 
 ## 技术细节
 
-- 数据表：`DT_ItemRecipeDataTable_Common`（参考 True Recipes 确认）
+- 数据表：`DT_ItemRecipeDataTable`（参考 True Recipes 确认）
 - 字段参考 PalSchema 官方 schema 定义
