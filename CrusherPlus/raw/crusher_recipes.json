@@ -440,6 +440,27 @@
       "EnergyAmount": 0,
       "CraftExpRate": 1.0,
       "Editor_RowNameHash": 0
+    },
+    "yehuoshun_Crusher_StoneToChromium": {
+      "Product_Id": "Chromium",
+      "Product_Count": 1,
+      "WorkAmount": 50000.0,
+      "WorkableAttribute": 1,
+      "UnlockItemID": "None",
+      "Material1_Id": "Stone",
+      "Material1_Count": 500,
+      "Material2_Id": "None",
+      "Material2_Count": 0,
+      "Material3_Id": "None",
+      "Material3_Count": 0,
+      "Material4_Id": "None",
+      "Material4_Count": 0,
+      "Material5_Id": "None",
+      "Material5_Count": 0,
+      "EnergyType": "None",
+      "EnergyAmount": 0,
+      "CraftExpRate": 50.0,
+      "Editor_RowNameHash": 0
     }
   }
 }
