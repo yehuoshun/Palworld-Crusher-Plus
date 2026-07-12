@@ -1,36 +1,36 @@
 {
-  "DT_ItemRecipeDataTable_Common": {
+  "DT_ItemRecipeDataTable": {
     "Crusher_StoneToOre": {
-      "ProductItemId": "CopperOre",
-      "ProductCount": 1,
+      "Product_Id": "CopperOre",
+      "Product_Count": 1,
       "WorkAmount": 100.0,
       "Material1_Id": "Stone",
       "Material1_Count": 10
     },
     "Crusher_StoneToCoal": {
-      "ProductItemId": "Coal",
-      "ProductCount": 1,
+      "Product_Id": "Coal",
+      "Product_Count": 1,
       "WorkAmount": 150.0,
       "Material1_Id": "Stone",
       "Material1_Count": 20
     },
     "Crusher_WoodToCharcoal": {
-      "ProductItemId": "Charcoal",
-      "ProductCount": 1,
+      "Product_Id": "Charcoal",
+      "Product_Count": 1,
       "WorkAmount": 50.0,
       "Material1_Id": "Wood",
       "Material1_Count": 5
     },
     "Crusher_WoodToFiber": {
-      "ProductItemId": "Fiber",
-      "ProductCount": 1,
+      "Product_Id": "Fiber",
+      "Product_Count": 1,
       "WorkAmount": 30.0,
       "Material1_Id": "Wood",
       "Material1_Count": 3
     },
     "Crusher_FiberToCloth": {
-      "ProductItemId": "Cloth",
-      "ProductCount": 1,
+      "Product_Id": "Cloth",
+      "Product_Count": 1,
       "WorkAmount": 50.0,
       "Material1_Id": "Fiber",
       "Material1_Count": 3
