@@ -146,6 +146,27 @@
       "EnergyAmount": 0,
       "CraftExpRate": 1.0,
       "Editor_RowNameHash": 0
+    },
+    "yehuoshun_Crusher_FiberToLeather": {
+      "Product_Id": "Leather",
+      "Product_Count": 1,
+      "WorkAmount": 1000.0,
+      "WorkableAttribute": 1,
+      "UnlockItemID": "None",
+      "Material1_Id": "Fiber",
+      "Material1_Count": 10,
+      "Material2_Id": "None",
+      "Material2_Count": 0,
+      "Material3_Id": "None",
+      "Material3_Count": 0,
+      "Material4_Id": "None",
+      "Material4_Count": 0,
+      "Material5_Id": "None",
+      "Material5_Count": 0,
+      "EnergyType": "None",
+      "EnergyAmount": 0,
+      "CraftExpRate": 1.0,
+      "Editor_RowNameHash": 0
     }
   }
 }
