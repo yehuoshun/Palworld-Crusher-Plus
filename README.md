@@ -102,3 +102,41 @@
 - 数据表：`DT_ItemRecipeDataTable`（参考 True Recipes）
 - 格式完全对齐 True Recipes，18 字段全齐
 - 所有配方不覆盖原版，使用独立 Entry ID
+
+### 模块结构
+
+```
+CrusherPlus/
+├── items/
+│   └── items.json    # 修改产物物品属性，让它们能在粉碎机里显示
+└── raw/
+    └── crusher_recipes.json  # 配方数据表
+```
+
+### 配方不显示？`items/items.json` 必读
+
+粉碎机只能显示 `TypeB` 为 `MaterialProccessing` 的物品作为产物。原版有些物品的 `TypeB` 不是这个值，不在粉碎机产物列表里，游戏里看不到配方。
+
+需要在 `items/items.json` 里把产物物品的 `TypeB` 改为 `MaterialProccessing`：
+
+```json
+{
+    "物品内部ID": {
+        "TypeB": "MaterialProccessing"
+    }
+}
+```
+
+当前已修复的物品：
+
+| 物品 | 内部ID | 修复日期 |
+|------|--------|----------|
+| 旧羊皮纸 | `AncientParts3` | 2026-07-13 |
+
+> 更多物品可能也需要修复（原油 `CrudeOil`、陨石碎片 `MeteorDrop`、夜星砂 `NightStone`、暗黑碎片 `PalDarkParts`、古代树皮 `Wood_Ancient`、古代熔岩块 `Lava_Ancient`、古代兽骨 `BeastBone_Ancient` 等），待逐个验证。
+
+### 查物品内部ID
+
+- [paldb.cn](https://paldb.cn) — 中文资料站
+- [palworld.th.gl](https://palworld.th.gl) — 英文数据库，URL 里含内部 Code Name
+- 内部 ID 格式：没有空格，驼峰或下划线，如 `AncientParts3`、`PalCrystal_Ex`
