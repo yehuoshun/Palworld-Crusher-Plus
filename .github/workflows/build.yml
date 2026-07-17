@@ -18,9 +18,11 @@ jobs:
       - name: Package mod
         run: |
           MOD_NAME="CrusherPlus"
-          VERSION="${GITHUB_REF_NAME#v}"
-          [ "$VERSION" = "$GITHUB_REF_NAME" ] && VERSION="dev-${GITHUB_SHA::7}"
-          ZIP_NAME="${MOD_NAME}-${VERSION}.zip"
+          if [[ "$GITHUB_REF_NAME" =~ ^v ]]; then
+            ZIP_NAME="${MOD_NAME}-${GITHUB_REF_NAME#v}.zip"
+          else
+            ZIP_NAME="${MOD_NAME}-dev-${GITHUB_SHA::7}.zip"
+          fi
           echo "ZIP_NAME=${ZIP_NAME}" >> "$GITHUB_ENV"
           cd "${MOD_NAME}"
           zip -r "../${ZIP_NAME}" ./*
@@ -32,7 +34,22 @@ jobs:
           path: ${{ env.ZIP_NAME }}
           if-no-files-found: error
 
-      - name: Create Release
+      # Push to main → 持续更新 Dev Build release
+      - name: Dev Release (continuous)
+        if: github.ref == 'refs/heads/main'
+        uses: ncipollo/release-action@v1
+        with:
+          tag: continuous
+          name: Dev Build
+          commit: ${{ github.sha }}
+          artifacts: ${{ env.ZIP_NAME }}
+          allowUpdates: true
+          replacesArtifacts: true
+          prerelease: true
+          body: "自动构建 #${{ github.run_number }}"
+
+      # Tag 推送 → 创建版本 Release
+      - name: Version Release
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
