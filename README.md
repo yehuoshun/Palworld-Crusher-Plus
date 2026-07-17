@@ -107,31 +107,34 @@
 
 ```
 CrusherPlus/
-├── items/
-│   └── items.json    # 修改产物物品属性，让它们能在粉碎机里显示
 └── raw/
-    └── crusher_recipes.json  # 配方数据表
+    ├── crusher_recipes.json   # 配方数据表
+    └── items_typeb_fix.json   # 修复物品 TypeB，让产物能在粉碎机显示
 ```
 
-### 配方不显示？`items/items.json` 必读
+### 配方不显示？`raw/` 必读
 
 粉碎机只能显示 `TypeB` 为 `MaterialProccessing` 的物品作为产物。原版有些物品的 `TypeB` 不是这个值，不在粉碎机产物列表里，游戏里看不到配方。
 
-需要在 `items/items.json` 里把产物物品的 `TypeB` 改为 `MaterialProccessing`：
+需要在 `raw/` 里创建针对 `DT_ItemDataTable` 的数据表修改文件，把产物物品的 `TypeB` 改为 `MaterialProccessing`：
 
 ```json
 {
-    "物品内部ID": {
-        "TypeB": "MaterialProccessing"
+    "DT_ItemDataTable": {
+        "物品内部ID": {
+            "TypeB": "MaterialProccessing"
+        }
     }
 }
 ```
+
+> ⚠️ 不要放到 `items/` 文件夹。PalSchema 的 `items/` 用于创建新物品，修改已有物品属性必须走 `raw/` + `DT_ItemDataTable`。
 
 当前已修复的物品：
 
 | 物品 | 内部ID | 修复日期 |
 |------|--------|----------|
-| 旧羊皮纸 | `AncientParts3` | 2026-07-13 |
+| 旧羊皮纸 | `AncientParts3` | 2026-07-17 |
 
 > 更多物品可能也需要修复（原油 `CrudeOil`、陨石碎片 `MeteorDrop`、夜星砂 `NightStone`、暗黑碎片 `PalDarkParts`、古代树皮 `Wood_Ancient`、古代熔岩块 `Lava_Ancient`、古代兽骨 `BeastBone_Ancient` 等），待逐个验证。
 
