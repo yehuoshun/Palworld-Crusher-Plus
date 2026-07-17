@@ -107,28 +107,25 @@
 
 ```
 CrusherPlus/
+├── items/
+│   └── items.json        # 修复产物物品 TypeB，让它们在粉碎机产物列表里显示
 └── raw/
-    ├── crusher_recipes.json   # 配方数据表
-    └── items_typeb_fix.json   # 修复物品 TypeB，让产物能在粉碎机显示
+    └── crusher_recipes.json  # 配方数据表
 ```
 
-### 配方不显示？`raw/` 必读
+### 配方不显示？`items/items.json` 必读
 
 粉碎机只能显示 `TypeB` 为 `MaterialProccessing` 的物品作为产物。原版有些物品的 `TypeB` 不是这个值，不在粉碎机产物列表里，游戏里看不到配方。
 
-需要在 `raw/` 里创建针对 `DT_ItemDataTable` 的数据表修改文件，把产物物品的 `TypeB` 改为 `MaterialProccessing`：
+需要在 `items/items.json` 里把产物物品的 `TypeB` 改为 `MaterialProccessing`：
 
 ```json
 {
-    "DT_ItemDataTable": {
-        "物品内部ID": {
-            "TypeB": "MaterialProccessing"
-        }
+    "物品内部ID": {
+        "TypeB": "MaterialProccessing"
     }
 }
 ```
-
-> ⚠️ 不要放到 `items/` 文件夹。PalSchema 的 `items/` 用于创建新物品，修改已有物品属性必须走 `raw/` + `DT_ItemDataTable`。
 
 当前已修复的物品：
 
